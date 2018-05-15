@@ -1,4 +1,4 @@
-## Secondo Progetto (Scheduling)
+# Secondo Progetto (Scheduling)
 ## Methods and tools for industrial automation
 
 ### Introduction:
