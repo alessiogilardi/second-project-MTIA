@@ -2,8 +2,8 @@
 ## Secondo Progetto (Scheduling)
 
 ### Introduction:
-Please refer to the problem described in the following link: 
-[Dynamic programming set 34 assembly line scheduling] (http://www.geeksforgeeks.org/dynamic-programming-set-34-assembly-line-scheduling/).
+Please refer to the problem described in the following link:
+[Dynamic programming set 34 assembly line scheduling](http://www.geeksforgeeks.org/dynamic-programming-set-34-assembly-line-scheduling/).
 
 *	Prepare a presentation and a short document to illustrate it
 *	Implement it in Matlab
