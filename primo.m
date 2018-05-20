@@ -28,7 +28,6 @@ for j = 2:n
     leave_time(2,j) = min(leave_time(2,j-1)+a(2,j), leave_time(1,j-1)+t(1,j)+a(2,j));
 end
 
-%min_time = min(leave_time(1,n)+x(1), leave_time(2,n)+x(2));
 
 [min_time, ind] = min(leave_time(:,n) + x);
 
