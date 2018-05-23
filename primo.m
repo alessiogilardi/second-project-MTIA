@@ -19,7 +19,7 @@ leave_time = zeros(assembly_lines, n); % Tempo di leave da una stazione
 % Inizializzazione
 leave_time(:,1) = e(:) + a(:,1);
 
-pass = zeros(assembly_lines, n); % Vettore di passaggio -> indica il passaggio o meno da una stazione
+pass = zeros(assembly_lines, n); % Matrice di passaggio -> indica il passaggio o meno da una stazione
 
 % Calcolo dei leave time per ogni stazione
 for j = 2:n
