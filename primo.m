@@ -14,13 +14,9 @@ e = [10 12]'; % Tempi di entrata
 
 x = [18 7]'; % Tempi di uscita dalla fabbrica
 
-leave_time = zeros(assembly_lines, n);
+leave_time = zeros(assembly_lines, n); % Tempo di leave da una stazione
 
 % Inizializzazione
-%for i = 1:assembly_lines
-    %leave_time(i,1) = e(i) + a(i,1);
-%end
-% Da sostituire con
 leave_time(:,1) = e(:) + a(:,1);
 
 pass = zeros(assembly_lines, n); % Vettore di passaggio -> indica il passaggio o meno da una stazione
@@ -36,28 +32,10 @@ end
 
 pass(line, n) = 1;
 for j = n-1:-1:1
-    [m,i] = min([leave_time(not_line(line),j)+t(not_line(line),j+1)+a(line,j+1), leave_time(line,j)+a(line,j+1)]);
-    %if i == 1
-        % vengo dall'altra linea
-        %line = not_line(line);
-        %pass(line,j) = 1;
-    %else
-        % vengo dalla stessa linea
-        %pass(line,j) = 1;
-    %end
-    
-    % Codice da provare %
+    [m,i] = min([leave_time(not_line(line),j)+t(not_line(line),j+1)+a(line,j+1), leave_time(line,j)+a(line,j+1)]);    
     if i == 1
-        % Vengo dall'altra linea
-        % quindi faccio un cambio di linea
+        % Vengo dall'altra linea quindi faccio un cambio di linea
         line = not_line(line);
     end
     pass(line,j) = 1;
-    %*******************%
 end
-
-
-
-
-
-
