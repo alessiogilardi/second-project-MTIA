@@ -1,7 +1,7 @@
 clc;
 clear;
 
-% Dati del prblema
+% Dati del problema
 
 assembly_lines = 2; % Numero di linee di assemblaggio
 n = 4; % Numero di stazioni di assemblaggio per ogni linea
