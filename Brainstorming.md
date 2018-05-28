@@ -2,4 +2,4 @@
 
 ## Programmazione matematica
 
-Sij = {0,1} -->
+S_{ij} = {0,1} -->
