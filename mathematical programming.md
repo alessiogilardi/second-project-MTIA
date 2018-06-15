@@ -9,7 +9,7 @@
 
 ## Funzione di costo
 
-![Cost function](https://latex.codecogs.com/gif.latex?\min \sum_{i=1}^{2} \sum_{j=1}^{N}c_{ij}S_{ij} + \sum_{j=2}^{N}t_{2j}(S_{1j} * S_{2j-1}) + t_{1j}(S_{2j} * S_{1j-1}) "Cost function")
+![Cost function](https://latex.codecogs.com/gif.latex?%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7B2%7D%20%5Csum_%7Bj%3D1%7D%5E%7BN%7Dc_%7Bij%7DS_%7Bij%7D%20&plus;%20%5Csum_%7Bj%3D2%7D%5E%7BN%7Dt_%7B2j%7D%28S_%7B1j%7D%20*%20S_%7B2j-1%7D%29%20&plus;%20t_%7B1j%7D%28S_%7B2j%7D%20*%20S_%7B1j-1%7D%29 "Cost function")
 
 ## Vincoli
 
