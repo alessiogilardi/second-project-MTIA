@@ -13,7 +13,7 @@
 
 ## Vincoli
 
-![Vincolo](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7B2%7D%7B%5Csum_%7Bj%3D1%7D%5E%7BN%7D%7BS_%7Bij%7D%20%3D%204%7D%7D "Vincolo")
+![Vincolo](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7B2%7D%7B%5Csum_%7Bj%3D1%7D%5E%7BN%7D%7BS_%7Bij%7D%20%3D%20N%7D%7D "Vincolo")
 
 ![Vincolo](https://latex.codecogs.com/gif.latex?%7B%5Csum_%7Bi%3D1%7D%5E%7B2%7D%7BS_%7Bij%7D%20%3D%201%7D%7D%20%5C%3B%5C%3B%5C%3B%20%7B%5Cforall%20j%3D1...N%7D "Vincolo")
 
