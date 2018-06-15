@@ -33,20 +33,24 @@ for j=1:N
     end
 end
 
-% Verifico che non ci siano percorsi ripetuti
-
-% o=-1;
-% for c=1:num_paths
-%     for d=1:num_paths
-%         if (not(c==d) && isequal(S(:,:,c),S(:,:,d)))
-%             o
-%         end
-%     end
-% end
-
+costs = zeros(num_paths,1);
 for c=1:num_paths
+    temp = e.*S(:,1,c);
+    costs(c) = costs(c) + sum(temp(:));
+    temp = x.*S(:,N,c);
+    costs(c) = costs(c) + sum(temp(:));
     
+    temp = a.*S(:,:,c);
+    costs(c) = costs(c) + sum(temp(:));
+    for j=2:N
+        costs(c) = costs(c) + t(2,j)*(S(1,j,c)*S(2,j-1,c)) + t(1,j)*(S(2,j,c)*S(1,j-1,c));
+    end
 end
+
+[min_cost, min_path_index] = min(costs);
+min_path = S(:,:,min_path_index);
+
+
 
 
 
