@@ -1,24 +1,10 @@
-clc;
-clear;
-
-% Dati del problema
-
-lines = 2; % Numero di linee di assemblaggio
-N = 4; % Numero di stazioni di assemblaggio per ogni linea
-
-%a = ones(assembly_lines, n);
-a = [4 5 3 2; 2 10 1 4]; % Tempi di elaborazione in ciascuna stazione
-
-%t = ones(assembly_lines, n); 
-t = [0 7 4 5; 0 9 2 8]; % Tempi di cambio di linea
-
-e = [10 12]'; % Tempi di entrata
-
-x = [18 7]'; % Tempi di uscita dalla fabbrica
+data;
+%Soluzione con metodo brute force
 
 num_paths = 2^N;
 S = zeros(lines, N, num_paths);
 
+% Genero tutti i percorsi possibili
 i=1;
 count=0;
 for j=1:N
@@ -33,6 +19,7 @@ for j=1:N
     end
 end
 
+% Calcolo il costo di ogni percorso
 costs = zeros(num_paths,1);
 for c=1:num_paths
     temp = e.*S(:,1,c);
@@ -47,6 +34,7 @@ for c=1:num_paths
     end
 end
 
+% Trovo il percorso a costo minimo
 [min_cost, min_path_index] = min(costs);
 min_path = S(:,:,min_path_index);
 
