@@ -10,3 +10,10 @@ Please refer to the problem described in the following link:
 *	Verify its performance with respect to a brute force approach
 *	Extend it to a different configuration at your choice
 *	Extend the algorithm to print the path covered by the car chassis in the factory.
+
+### Done:
+* Dynamical programming solution
+* Brute forcing solution
+
+### TBD:
+* Mathematical programming solution
