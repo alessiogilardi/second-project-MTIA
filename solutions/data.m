@@ -1,17 +1,19 @@
 clc;
 clear;
 
-% Datidel problema
+% Dati del problema
 
 lines = 2; % Numero di linee di assemblaggio
 N = 4; % Numero di stazioni di assemblaggio per ogni linea
 
-%a = ones(assembly_lines, n);
-a = [4 5 3 2; 2 10 1 4]; % Tempi di elaborazione in ciascuna stazione
+% Tempi di elaborazione in ciascuna stazione
+a = [4  5 3 2;
+     2 10 1 4];
 
-%t = ones(assembly_lines, n); 
-t = [0 7 4 5; 0 9 2 8]; % Tempi di cambio di linea
+% Tempi di cambio di linea
+t = [0 7 4 5;
+     0 9 2 8];
 
-e = [10 12]'; % Tempi di entrata
+e = [10 12]'; % Tempi di entrata nella linea di assemblaggio
 
 x = [18 7]'; % Tempi di uscita dalla fabbrica
