@@ -1,7 +1,7 @@
 # Mathematical Programming Solution
 
 ## Dati
-![Station cost](https://latex.codecogs.com/gif.latex?c_i_j%20%5Crightarrow%20Tempo%5C%2Cdi%5C%2Celaborazione%5C%2Cin%5C%2Cogni%5C%2Cstazione "Station cost")
+![Station cost](https://latex.codecogs.com/gif.latex?a_i_j%20%5Crightarrow%20Tempo%5C%2Cdi%5C%2Celaborazione%5C%2Cin%5C%2Cogni%5C%2Cstazione "Station cost")
 
 ![Transport cost](https://latex.codecogs.com/gif.latex?t_i_j%20%5Crightarrow%20Tempo%5C%2Cdi%5C%2Ctrasferimento "Transport cost")
 
@@ -9,7 +9,7 @@
 
 ## Funzione di costo
 
-![Cost function](https://latex.codecogs.com/gif.latex?%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7B2%7D%20%5Csum_%7Bj%3D1%7D%5E%7BN%7Dc_%7Bij%7DS_%7Bij%7D%20&plus;%20%5Csum_%7Bj%3D2%7D%5E%7BN%7Dt_%7B2j%7D%28S_%7B1j%7D%20*%20S_%7B2j-1%7D%29%20&plus;%20t_%7B1j%7D%28S_%7B2j%7D%20*%20S_%7B1j-1%7D%29 "Cost function")
+![Cost function](https://latex.codecogs.com/gif.latex?%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7B2%7D%20%5Csum_%7Bj%3D1%7D%5E%7BN%7Da_%7Bij%7DS_%7Bij%7D%20&plus;%20%5Csum_%7Bj%3D2%7D%5E%7BN%7Dt_%7B2j%7D%28S_%7B1j%7D%20*%20S_%7B2j-1%7D%29%20&plus;%20t_%7B1j%7D%28S_%7B2j%7D%20*%20S_%7B1j-1%7D%29 "Cost function")
 
 ## Vincoli
 
