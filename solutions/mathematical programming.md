@@ -9,7 +9,7 @@
 
 ## Funzione di costo
 
-![Cost function](https://latex.codecogs.com/gif.latex?%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7B2%7D%20%5Csum_%7Bj%3D1%7D%5E%7BN%7Da_%7Bij%7DS_%7Bij%7D%20&plus;%20%5Csum_%7Bj%3D2%7D%5E%7BN%7Dt_%7B2j%7D%28S_%7B1j%7D%20*%20S_%7B2j-1%7D%29%20&plus;%20t_%7B1j%7D%28S_%7B2j%7D%20*%20S_%7B1j-1%7D%29 "Cost function")
+![Cost function](https://latex.codecogs.com/gif.latex?%5Cmin%20%5Csum_%7Bi%3D1%7D%5E%7B2%7D%20%5Cleft%20%28%20e_i%20S_%7Bi1%7D%20&plus;%20x_i%20S_%7BiN%7D%20&plus;%20%5Csum_%7Bj%3D1%7D%5E%7BN%7D%20a_%7Bij%7DS_%7Bij%7D%20%5Cright%20%29%20&plus;%20%5Csum_%7Bj%3D2%7D%5E%7BN%7Dt_%7B2j%7D%28S_%7B1j%7D%20%5Cast%20S_%7B2j-1%7D%29%20&plus;%20t_%7B1j%7D%28S_%7B2j%7D%20%5Cast%20S_%7B1j-1%7D%29 "Cost function")
 
 ## Vincoli
 
