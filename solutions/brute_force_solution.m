@@ -24,16 +24,20 @@ for j=1:N
 end
 
 % Calcolo il costo di ogni percorso
-costs = zeros(num_paths,1);
+costs = zeros(num_paths,1); % Array con il costo di ogni percorso
 for c=1:num_paths
+    % Aggiungo il costo di ingresso
     temp = e.*S(:,1,c);
     costs(c) = costs(c) + sum(temp(:));
+    % Aggiungo il costo di uscita
     temp = x.*S(:,N,c);
     costs(c) = costs(c) + sum(temp(:));
     
+    % Aggiungo il costo di elaborazione in ogni stazione
     temp = a.*S(:,:,c);
     costs(c) = costs(c) + sum(temp(:));
     for j=2:N
+        % Aggiungo il costo di eventuale trasferimento
         costs(c) = costs(c) + t(2,j)*(S(1,j,c)*S(2,j-1,c)) + t(1,j)*(S(2,j,c)*S(1,j-1,c));
         counter = counter + 1;
     end

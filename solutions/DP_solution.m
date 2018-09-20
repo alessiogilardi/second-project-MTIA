@@ -20,6 +20,7 @@ for j = 2:N
     counter = counter + 1;
 end
 
+
 [min_time, line] = min(leave_time(:,N) + x);
 
 % Calcolo percorso a costo minimo
