@@ -27,7 +27,8 @@ end
 min_path = zeros(lines, N); % Matrice di passaggio -> indica il passaggio o meno da una stazione
 min_path(line, N) = 1;
 for j = N-1:-1:1
-    [m,i] = min([leave_time(not_line(line),j)+t(not_line(line),j+1)+a(line,j+1), leave_time(line,j)+a(line,j+1)]);    
+    [m,i] = min([leave_time(not_line(line),j)+t(not_line(line),j+1)+a(line,j+1),    leave_time(line,j)+a(line,j+1)]);    
+    % [m,i] = min([leave_time(not_line(line),j)+t(not_line(line),j+1)+a(line,j+1),    leave_time(line,j)+a(line,j+1)]);
     if i == 1
         % Vengo dall'altra linea quindi faccio un cambio di linea
         line = not_line(line);
@@ -35,3 +36,4 @@ for j = N-1:-1:1
     min_path(line,j) = 1;
     counter = counter + 1;
 end
+min_path
