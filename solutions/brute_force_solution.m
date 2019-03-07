@@ -1,7 +1,7 @@
 data;
 
 % Contatore per valutare il numero di iterazioni necessarie al
-% raggiungimento della souzione
+% raggiungimento della soluzione
 counter = 0;
 
 %%%% Soluzione con metodo brute force %%%%
@@ -46,6 +46,8 @@ end
 % Trovo il percorso a costo minimo
 [min_cost, min_path_index] = min(costs);
 min_path = S(:,:,min_path_index);
+
+
 
 
 
