@@ -1,11 +1,10 @@
 data;
-
 %   Contatore per valutare il numero di iterazioni necessarie 
 %   al raggiungimento della soluzione
 counter = 0;
 %%  Soluzione del problema con dynamic programming 
-leave_time = zeros(lines, N); % Tempo di leave da una stazione
-
+%   Tempo di leave da una stazione
+leave_time = zeros(lines, N); 
 %%  Esecuzione 
 
 %%  Inizializzazione

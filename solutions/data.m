@@ -8,7 +8,7 @@ N = 4; % Numero di stazioni di assemblaggio per ogni linea
 
 % weights = zeros(1,N);
 weightsDirect = [0 0 0 0;
-                 0 0 0 0];
+                 0 0 1000000 0];
 
 weightsObliquous = [0 0 0 0;
                     0 0 0 0];
